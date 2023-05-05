@@ -9,7 +9,6 @@ blist = urllib.request.urlopen(url_blist)
 misp = ExpandedPyMISP(misp_url, misp_key, misp_verify_cert)
 event = MISPEvent()
 event.info = "Blocklisted IP"
-event.distibution = "0"
 event.analysis = "1"
 event.threat_level_id = "1"
 event.distribution = "2"
